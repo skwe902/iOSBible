@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		03985A432769852D001A1155 /* iOSBibleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03985A422769852D001A1155 /* iOSBibleApp.swift */; };
-		03985A452769852D001A1155 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03985A442769852D001A1155 /* ContentView.swift */; };
 		03985A4727698531001A1155 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03985A4627698531001A1155 /* Assets.xcassets */; };
 		03985A4A27698531001A1155 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03985A4927698531001A1155 /* Preview Assets.xcassets */; };
 		03985A5427698531001A1155 /* iOSBibleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03985A5327698531001A1155 /* iOSBibleTests.swift */; };
@@ -16,8 +15,8 @@
 		03985A6027698531001A1155 /* iOSBibleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03985A5F27698531001A1155 /* iOSBibleUITestsLaunchTests.swift */; };
 		03985A6D27698546001A1155 /* bible.json in Resources */ = {isa = PBXBuildFile; fileRef = 03985A6C27698546001A1155 /* bible.json */; };
 		03985A6F2769862E001A1155 /* BibleStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03985A6E2769862E001A1155 /* BibleStruct.swift */; };
-		03985A712769871F001A1155 /* JSONUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03985A702769871F001A1155 /* JSONUtils.swift */; };
-		03985A752769957C001A1155 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03985A742769957C001A1155 /* ListView.swift */; };
+		03985A752769957C001A1155 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03985A742769957C001A1155 /* CardView.swift */; };
+		03985A772769B265001A1155 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03985A762769B265001A1155 /* SwiftUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +39,6 @@
 /* Begin PBXFileReference section */
 		03985A3F2769852D001A1155 /* iOSBible.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSBible.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03985A422769852D001A1155 /* iOSBibleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSBibleApp.swift; sourceTree = "<group>"; };
-		03985A442769852D001A1155 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		03985A4627698531001A1155 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		03985A4927698531001A1155 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		03985A4F27698531001A1155 /* iOSBibleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSBibleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,8 +48,8 @@
 		03985A5F27698531001A1155 /* iOSBibleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSBibleUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		03985A6C27698546001A1155 /* bible.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = bible.json; sourceTree = "<group>"; };
 		03985A6E2769862E001A1155 /* BibleStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibleStruct.swift; sourceTree = "<group>"; };
-		03985A702769871F001A1155 /* JSONUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONUtils.swift; sourceTree = "<group>"; };
-		03985A742769957C001A1155 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		03985A742769957C001A1155 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		03985A762769B265001A1155 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,10 +101,9 @@
 			isa = PBXGroup;
 			children = (
 				03985A422769852D001A1155 /* iOSBibleApp.swift */,
+				03985A762769B265001A1155 /* SwiftUIView.swift */,
 				03985A6E2769862E001A1155 /* BibleStruct.swift */,
-				03985A702769871F001A1155 /* JSONUtils.swift */,
-				03985A442769852D001A1155 /* ContentView.swift */,
-				03985A742769957C001A1155 /* ListView.swift */,
+				03985A742769957C001A1155 /* CardView.swift */,
 				03985A4627698531001A1155 /* Assets.xcassets */,
 				03985A6C27698546001A1155 /* bible.json */,
 				03985A4827698531001A1155 /* Preview Content */,
@@ -271,9 +268,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				03985A6F2769862E001A1155 /* BibleStruct.swift in Sources */,
-				03985A712769871F001A1155 /* JSONUtils.swift in Sources */,
-				03985A752769957C001A1155 /* ListView.swift in Sources */,
-				03985A452769852D001A1155 /* ContentView.swift in Sources */,
+				03985A752769957C001A1155 /* CardView.swift in Sources */,
+				03985A772769B265001A1155 /* SwiftUIView.swift in Sources */,
 				03985A432769852D001A1155 /* iOSBibleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

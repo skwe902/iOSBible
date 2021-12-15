@@ -10,7 +10,8 @@ import SwiftUI
 struct iOSBibleApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            //CardView(bible: Bible)
+            SwiftUIView()
         }
     }
 }

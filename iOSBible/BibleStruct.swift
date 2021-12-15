@@ -1,24 +1,32 @@
 //
-//  BibleDatabase.swift
+//  BibleStruct.swift
 //  iOSBible
 //
 
 import Foundation
 
-struct bible: Codable {
-    let book: Int
-    let cate: Int
-    let chapter: Int
-    let idx: Int
-    let long_label: String
-    let paragraph: Int
-    let sentence: String
-    let short_label: String
-    let testament: String
+    
+struct Bible: Decodable {
+    var book: String
+    var cate: String
+    var chapter: String
+    var idx: String
+    var long_label: String
+    var paragraph: String
+    var sentence: String
+    var short_label: String
+    var testament: String
 }
 
-struct koreanBible: Codable {
-    let verses: [bible]
+func jsonTwo() -> [Bible]{
+    let url = Bundle.main.url(forResource: "bible", withExtension: "json")!
+    let data = try! Data(contentsOf: url)
+    let verses = try! JSONDecoder().decode([Bible].self, from: data)
+    return verses
+}
+
+extension Bible{
+    static let verses:[Bible] = jsonTwo()
 }
 
 
