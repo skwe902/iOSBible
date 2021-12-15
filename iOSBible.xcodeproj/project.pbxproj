@@ -17,6 +17,7 @@
 		03985A6F2769862E001A1155 /* BibleStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03985A6E2769862E001A1155 /* BibleStruct.swift */; };
 		03985A752769957C001A1155 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03985A742769957C001A1155 /* CardView.swift */; };
 		03985A772769B265001A1155 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03985A762769B265001A1155 /* SwiftUIView.swift */; };
+		03985A792769D701001A1155 /* ChapterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03985A782769D701001A1155 /* ChapterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		03985A6E2769862E001A1155 /* BibleStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibleStruct.swift; sourceTree = "<group>"; };
 		03985A742769957C001A1155 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		03985A762769B265001A1155 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		03985A782769D701001A1155 /* ChapterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				03985A762769B265001A1155 /* SwiftUIView.swift */,
 				03985A6E2769862E001A1155 /* BibleStruct.swift */,
 				03985A742769957C001A1155 /* CardView.swift */,
+				03985A782769D701001A1155 /* ChapterView.swift */,
 				03985A4627698531001A1155 /* Assets.xcassets */,
 				03985A6C27698546001A1155 /* bible.json */,
 				03985A4827698531001A1155 /* Preview Content */,
@@ -271,6 +274,7 @@
 				03985A752769957C001A1155 /* CardView.swift in Sources */,
 				03985A772769B265001A1155 /* SwiftUIView.swift in Sources */,
 				03985A432769852D001A1155 /* iOSBibleApp.swift in Sources */,
+				03985A792769D701001A1155 /* ChapterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
