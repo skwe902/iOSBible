@@ -14,7 +14,7 @@ struct CardView: View {
 }
 
 struct CardView_Previews: PreviewProvider {
-    static var bible = Bible.verses[1]
+    static var bible = Bible.verses[2]
     static var previews: some View {
         CardView(bible: bible)
     }
