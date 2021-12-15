@@ -14,6 +14,10 @@
 		03985A5427698531001A1155 /* iOSBibleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03985A5327698531001A1155 /* iOSBibleTests.swift */; };
 		03985A5E27698531001A1155 /* iOSBibleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03985A5D27698531001A1155 /* iOSBibleUITests.swift */; };
 		03985A6027698531001A1155 /* iOSBibleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03985A5F27698531001A1155 /* iOSBibleUITestsLaunchTests.swift */; };
+		03985A6D27698546001A1155 /* bible.json in Resources */ = {isa = PBXBuildFile; fileRef = 03985A6C27698546001A1155 /* bible.json */; };
+		03985A6F2769862E001A1155 /* BibleStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03985A6E2769862E001A1155 /* BibleStruct.swift */; };
+		03985A712769871F001A1155 /* JSONUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03985A702769871F001A1155 /* JSONUtils.swift */; };
+		03985A752769957C001A1155 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03985A742769957C001A1155 /* ListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,10 @@
 		03985A5927698531001A1155 /* iOSBibleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSBibleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		03985A5D27698531001A1155 /* iOSBibleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSBibleUITests.swift; sourceTree = "<group>"; };
 		03985A5F27698531001A1155 /* iOSBibleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSBibleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		03985A6C27698546001A1155 /* bible.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = bible.json; sourceTree = "<group>"; };
+		03985A6E2769862E001A1155 /* BibleStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibleStruct.swift; sourceTree = "<group>"; };
+		03985A702769871F001A1155 /* JSONUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONUtils.swift; sourceTree = "<group>"; };
+		03985A742769957C001A1155 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +103,12 @@
 			isa = PBXGroup;
 			children = (
 				03985A422769852D001A1155 /* iOSBibleApp.swift */,
+				03985A6E2769862E001A1155 /* BibleStruct.swift */,
+				03985A702769871F001A1155 /* JSONUtils.swift */,
 				03985A442769852D001A1155 /* ContentView.swift */,
+				03985A742769957C001A1155 /* ListView.swift */,
 				03985A4627698531001A1155 /* Assets.xcassets */,
+				03985A6C27698546001A1155 /* bible.json */,
 				03985A4827698531001A1155 /* Preview Content */,
 			);
 			path = iOSBible;
@@ -232,6 +244,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				03985A4A27698531001A1155 /* Preview Assets.xcassets in Resources */,
+				03985A6D27698546001A1155 /* bible.json in Resources */,
 				03985A4727698531001A1155 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,6 +270,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03985A6F2769862E001A1155 /* BibleStruct.swift in Sources */,
+				03985A712769871F001A1155 /* JSONUtils.swift in Sources */,
+				03985A752769957C001A1155 /* ListView.swift in Sources */,
 				03985A452769852D001A1155 /* ContentView.swift in Sources */,
 				03985A432769852D001A1155 /* iOSBibleApp.swift in Sources */,
 			);
