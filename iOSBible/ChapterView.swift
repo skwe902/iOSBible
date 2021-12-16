@@ -7,11 +7,11 @@ import SwiftUI
 
 struct ChapterView: View {
     let bible: [Bible]
-    let text = "창세기 1"
+    let text = "창세기 1장"
     var body: some View {
         VStack{
-            Text(text)
-                .font(.title)
+//            Text(text)
+//                .font(.title)
             List{
                 ForEach(bible){ bible in
                     if(bible.short_label == "창" && bible.chapter == "1"){
@@ -20,6 +20,8 @@ struct ChapterView: View {
                        }
             }
         }
+        .navigationTitle(text)
+
     }
 }
 

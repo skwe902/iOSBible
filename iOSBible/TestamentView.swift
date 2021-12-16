@@ -18,7 +18,6 @@ struct TestamentView: View {
                 .font(.title)
                 .frame(maxWidth: .infinity, alignment: .center)
                 .padding()
-                .background(Color.gray)
             ForEach(oldList, id: \.self){ book in
                 NavigationLink(destination: ChapterView(bible: bible)){
                     Text(book)
@@ -30,7 +29,6 @@ struct TestamentView: View {
                 .font(.title)
                 .frame(maxWidth: .infinity, alignment: .center)
                 .padding()
-                .background(Color.gray)
             ForEach(newList, id: \.self){ book in
                 NavigationLink(destination: ChapterView(bible: bible)){
                     Text(book)
