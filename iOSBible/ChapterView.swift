@@ -10,7 +10,7 @@ struct ChapterView: View {
     var body: some View {
         List{
             ForEach(bible){ bible in
-                if(bible.short_label.contains("창") && bible.chapter.contains("1")){
+                if(bible.short_label == "창" && bible.chapter == "1"){
                     CardView(bible: bible)
                 }
                    }

@@ -11,7 +11,7 @@ struct iOSBibleApp: App {
     var body: some Scene {
         WindowGroup {
             //CardView(bible: Bible)
-            SwiftUIView()
+            ChapterView(bible: Bible.verses)
         }
     }
 }
