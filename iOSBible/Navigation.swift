@@ -12,6 +12,7 @@ class Navigation: ObservableObject{
     @Published var oldList:[String] = []
     @Published var newList:[String] = []
     @Published var numChapter:[String] = []
+    @Published var verseList:[String] = []
     
     func getBookList()->([String], [String]){
         for bible in Bible.verses{
@@ -34,8 +35,13 @@ class Navigation: ObservableObject{
         return numChapter
     }
     
-    func getVerseList(book: String, chapter:String){
-        
+    func getVerseList(book: String, chapter:String) -> [String]{ //probably return the verse number as well as tuple
+        for bible in Bible.verses{
+            if !verseList.contains(bible.paragraph) && bible.long_label == book && bible.chapter == chapter{
+                verseList.append(bible.paragraph)
+            }
+        }
+        return verseList
     }
     
     
