@@ -2,19 +2,23 @@
 //  ChapterView.swift
 //  iOSBible
 //
-//  Created by Dani D on 15/12/21.
-//
 
 import SwiftUI
 
 struct ChapterView: View {
+    let bibles: [Bible]
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        List{
+            ForEach(bibles){
+                bible in CardView(bible: bible) where bible.long_label == "창세기" && bible.paragraph == "1"
+            }
+            
+        }
     }
 }
 
 struct ChapterView_Previews: PreviewProvider {
     static var previews: some View {
-        ChapterView()
+        ChapterView(bibles: Bible.verses)
     }
 }

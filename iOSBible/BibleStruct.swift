@@ -6,7 +6,8 @@
 import Foundation
 
     
-struct Bible: Decodable {
+struct Bible: Decodable, Identifiable, Hashable{
+    let id: UUID
     var book: String
     var cate: String
     var chapter: String
@@ -16,8 +17,22 @@ struct Bible: Decodable {
     var sentence: String
     var short_label: String
     var testament: String
+    
+    init(id: UUID = UUID(), book: String, cate: String, chapter: String, idx: String, long_label: String, paragraph: String, sentence: String, short_label: String, testament: String){
+        self.id = id
+        self.book = book
+        self.cate = cate
+        self.chapter = chapter
+        self.idx = idx
+        self.long_label = long_label
+        self.paragraph = paragraph
+        self.sentence = sentence
+        self.short_label = short_label
+        self.testament = testament
+    }
+    
 }
-
+//read the json file
 func jsonTwo() -> [Bible]{
     let url = Bundle.main.url(forResource: "bible", withExtension: "json")!
     let data = try! Data(contentsOf: url)
