@@ -5,7 +5,6 @@
 
 import Foundation
 
-    
 struct Bible: Decodable{
     var book: String
     var cate: String
@@ -16,7 +15,6 @@ struct Bible: Decodable{
     var sentence: String
     var short_label: String
     var testament: String
-    
 }
 
 //read the json file
