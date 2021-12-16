@@ -2,8 +2,6 @@
 //  ChapterListView.swift
 //  iOSBible
 //
-//  Created by Dani D on 16/12/21.
-//
 
 import SwiftUI
 
