@@ -9,10 +9,11 @@ struct ChapterView: View {
     let bible: [Bible]
     var body: some View {
         List{
-            ForEach(bible.filter{$0.short_label.contains("창") && $0.chapter.contains("1")}){
-                bible in CardView(bible: bible)
-            }
-            
+            ForEach(bible){ bible in
+                if(bible.short_label.contains("창") && bible.chapter.contains("1")){
+                    CardView(bible: bible)
+                }
+                   }
         }
     }
 }
