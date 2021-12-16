@@ -5,7 +5,6 @@
 
 import SwiftUI
 
-var list: [String] = []
 struct TestamentView: View {
     let bible: [Bible]
     @ObservedObject var navigation = Navigation()
@@ -19,7 +18,7 @@ struct TestamentView: View {
                 .frame(maxWidth: .infinity, alignment: .center)
                 .padding()
             ForEach(oldList, id: \.self){ book in
-                NavigationLink(destination: ChapterView(bible: bible)){
+                NavigationLink(destination: ChapterListView(bible: bible, chapterName: book)){
                     Text(book)
                         .frame(maxWidth: .infinity, alignment: .center)
                 }

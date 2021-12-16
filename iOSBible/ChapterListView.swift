@@ -8,13 +8,24 @@
 import SwiftUI
 
 struct ChapterListView: View {
+    @ObservedObject var navigation = Navigation()
+    let bible: [Bible]
+    let chapterName:String
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        let count = navigation.getNumChapter(chapter: chapterName)
+        List{
+            ForEach(count, id:\.self){ num in
+                NavigationLink(destination: ChapterView(bible: bible)){
+                    Text(num)
+                        .frame(maxWidth: .infinity, alignment: .center)
+                }
+            }
+        }
     }
 }
 
 struct ChapterListView_Previews: PreviewProvider {
     static var previews: some View {
-        ChapterListView()
+        ChapterListView(bible: Bible.verses, chapterName: "창세기")
     }
 }

@@ -17,11 +17,10 @@ struct ChapterView: View {
                     if(bible.short_label == "창" && bible.chapter == "1"){
                         CardView(bible: bible)
                     }
-                       }
+                }
             }
         }
         .navigationTitle(text)
-
     }
 }
 

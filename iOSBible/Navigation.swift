@@ -11,6 +11,7 @@ class Navigation: ObservableObject{
     @Published var book:String = ""
     @Published var oldList:[String] = []
     @Published var newList:[String] = []
+    @Published var numChapter:[String] = []
     
     func getBookList()->([String], [String]){
         for bible in Bible.verses{
@@ -22,6 +23,15 @@ class Navigation: ObservableObject{
             }
         }
         return (oldList, newList)
+    }
+    
+    func getNumChapter(chapter: String) -> [String]{
+        for bible in Bible.verses{
+            if bible.long_label == chapter{
+                numChapter.append(bible.chapter)
+            }
+        }
+        return numChapter
     }
     
     
