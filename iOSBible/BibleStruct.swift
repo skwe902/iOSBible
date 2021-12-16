@@ -23,12 +23,12 @@ struct Bible: Decodable, Identifiable, Hashable{
         self.book = book
         self.cate = cate
         self.chapter = chapter
-        self.idx = idx
         self.long_label = long_label
         self.paragraph = paragraph
         self.sentence = sentence
         self.short_label = short_label
         self.testament = testament
+        self.idx = idx
     }
     
 }
