@@ -29,7 +29,7 @@ struct TestamentView: View {
                 .frame(maxWidth: .infinity, alignment: .center)
                 .padding()
             ForEach(newList, id: \.self){ book in
-                NavigationLink(destination: ChapterView(bible: bible)){
+                NavigationLink(destination: ChapterListView(bible: bible, chapterName: book)){
                     Text(book)
                         .frame(maxWidth: .infinity, alignment: .center)
                 }

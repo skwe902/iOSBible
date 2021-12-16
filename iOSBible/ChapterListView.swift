@@ -12,10 +12,10 @@ struct ChapterListView: View {
     let bible: [Bible]
     let chapterName:String
     var body: some View {
-        let count = navigation.getNumChapter(chapter: chapterName)
+        let count = navigation.getNumChapter(book: chapterName)
         List{
             ForEach(count, id:\.self){ num in
-                NavigationLink(destination: ChapterView(bible: bible)){
+                NavigationLink(destination: ChapterView(bible: bible, bookName: chapterName, chapterNo: num)){
                     Text(num)
                         .frame(maxWidth: .infinity, alignment: .center)
                 }

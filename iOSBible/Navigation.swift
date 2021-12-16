@@ -25,13 +25,17 @@ class Navigation: ObservableObject{
         return (oldList, newList)
     }
     
-    func getNumChapter(chapter: String) -> [String]{
+    func getNumChapter(book: String) -> [String]{
         for bible in Bible.verses{
-            if bible.long_label == chapter{
+            if !numChapter.contains(bible.chapter) && bible.long_label == book{
                 numChapter.append(bible.chapter)
             }
         }
         return numChapter
+    }
+    
+    func getVerseList(book: String, chapter:String){
+        
     }
     
     
