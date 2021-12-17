@@ -111,12 +111,12 @@
 				03985A422769852D001A1155 /* iOSBibleApp.swift */,
 				03985A762769B265001A1155 /* SwiftUIView.swift */,
 				03985A6E2769862E001A1155 /* BibleStruct.swift */,
-				03985A742769957C001A1155 /* CardView.swift */,
 				03985A4627698531001A1155 /* Assets.xcassets */,
 				03985A7C276B093B001A1155 /* Navigation.swift */,
 				03985A7A276AF96B001A1155 /* TestamentView.swift */,
 				03985A7E276B223F001A1155 /* ChapterListView.swift */,
 				03985A782769D701001A1155 /* ChapterView.swift */,
+				03985A742769957C001A1155 /* CardView.swift */,
 				03985A6C27698546001A1155 /* bible.json */,
 				03985A4827698531001A1155 /* Preview Content */,
 			);

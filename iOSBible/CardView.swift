@@ -6,7 +6,6 @@
 import SwiftUI
 
 struct CardView: View {
-    let bible: Bible
     let verseNum: String
     let verseList: String
     var body: some View {
@@ -18,13 +17,14 @@ struct CardView: View {
                 .font(.body)
                 .frame(maxWidth: .infinity, alignment: .leading)
         }
+        
     }
 }
 
 struct CardView_Previews: PreviewProvider {
     static var bible = Bible.verses[1]
     static var previews: some View {
-        CardView(bible: bible, verseNum: "1", verseList: "hello")
+        CardView(verseNum: "1", verseList: "hello")
             .previewLayout(.fixed(width: 500, height: 60))
     }
 }

@@ -6,16 +6,16 @@
 import SwiftUI
 
 struct ChapterView: View {
-    let bible: [Bible]
     let bookName:String
     let chapterNo: String
     @ObservedObject var navigation = Navigation()
     var body: some View {
         let (verseNum, verseList) = navigation.getVerseList(book: bookName, chapter: chapterNo)
+        let newArray = Array(zip(verseNum, verseList))
         VStack{
             List{
-                ForEach(Array(zip(verseNum, verseList)), id: \.self) { item in
-                    CardView(bible: bible, verseNum: item.0, verseList: item.1)
+                ForEach(newArray, id: \.0) { item in
+                    CardView(verseNum: item.0, verseList: item.1)
                 }
             }
         }
@@ -25,6 +25,6 @@ struct ChapterView: View {
 
 struct ChapterView_Previews: PreviewProvider {
     static var previews: some View {
-        ChapterView(bible: Bible.verses, bookName: "창세기", chapterNo: "1")
+        ChapterView(bookName: "창세기", chapterNo: "1")
     }
 }
