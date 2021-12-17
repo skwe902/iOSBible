@@ -7,12 +7,14 @@ import SwiftUI
 
 struct CardView: View {
     let bible: Bible
+    let verseNum: String
+    let verseList: String
     var body: some View {
         HStack{
-            Text(bible.paragraph)
+            Text(verseNum)
                 .font(.title)
                 .frame(width: 45, alignment: .center)
-            Text(bible.sentence)
+            Text(verseList)
                 .font(.body)
                 .frame(maxWidth: .infinity, alignment: .leading)
         }
@@ -22,7 +24,7 @@ struct CardView: View {
 struct CardView_Previews: PreviewProvider {
     static var bible = Bible.verses[1]
     static var previews: some View {
-        CardView(bible: bible)
+        CardView(bible: bible, "1", "hello")
             .previewLayout(.fixed(width: 500, height: 60))
     }
 }
