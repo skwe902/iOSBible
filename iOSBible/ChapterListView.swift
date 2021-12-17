@@ -12,9 +12,9 @@ struct ChapterListView: View {
     var body: some View {
         let count = navigation.getNumChapter(book: chapterName)
         List{
-            Text(chapterName)
-                .font(.title)
-                .frame(maxWidth: .infinity, alignment: .center)
+//            Text(chapterName)
+//                .font(.title)
+//                .frame(maxWidth: .infinity, alignment: .center)
             ForEach(count, id:\.self){ num in
                 NavigationLink(destination: ChapterView(bookName: chapterName, chapterNo: num)){
                     Text(num)
@@ -22,6 +22,7 @@ struct ChapterListView: View {
                 }
             }
         }
+        .navigationTitle(chapterName)
     }
 }
 
