@@ -11,7 +11,7 @@ struct iOSBibleApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationView{
-                TestamentView(bible: Bible.verses)
+                TestamentView()
             }
         }
     }

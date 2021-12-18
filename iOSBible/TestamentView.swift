@@ -6,9 +6,7 @@
 import SwiftUI
 
 struct TestamentView: View {
-    let bible: [Bible]
     @ObservedObject var navigation = Navigation()
-    
     var body: some View {
         let (oldList, newList) = navigation.getBookList()
         VStack{
@@ -46,7 +44,7 @@ struct TestamentView: View {
 struct TestamentView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView{
-            TestamentView(bible: Bible.verses)
+            TestamentView()
         }
     }
 }
