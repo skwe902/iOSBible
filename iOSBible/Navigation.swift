@@ -38,7 +38,7 @@ class Navigation: ObservableObject{
     
     func getVerseList(book: String, chapter:String) -> ([String], [String]){ //probably return the verse number as well as tuple
         for bible in Bible.verses{
-            if !verseList.contains(bible.sentence) && !verseNum.contains(bible.paragraph) && bible.long_label == book && bible.chapter == chapter{
+            if !verseNum.contains(bible.paragraph) && bible.long_label == book && bible.chapter == chapter{
                 verseList.append(bible.sentence)
                 verseNum.append(bible.paragraph)
             }
