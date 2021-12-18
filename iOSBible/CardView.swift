@@ -12,7 +12,7 @@ struct CardView: View {
         HStack{
             Text(verseNum)
                 .font(.title)
-                .frame(width: 45, alignment: .center)
+                .frame(width: 50, alignment: .center)
             Text(verseList)
                 .font(.body)
                 .frame(maxWidth: .infinity, alignment: .leading)
