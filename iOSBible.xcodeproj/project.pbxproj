@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0369FC9A276EC7E5002245D3 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0369FC99276EC7E5002245D3 /* StartView.swift */; };
 		03985A432769852D001A1155 /* iOSBibleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03985A422769852D001A1155 /* iOSBibleApp.swift */; };
 		03985A4727698531001A1155 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03985A4627698531001A1155 /* Assets.xcassets */; };
 		03985A4A27698531001A1155 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03985A4927698531001A1155 /* Preview Assets.xcassets */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0369FC99276EC7E5002245D3 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
 		03985A3F2769852D001A1155 /* iOSBible.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSBible.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03985A422769852D001A1155 /* iOSBibleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSBibleApp.swift; sourceTree = "<group>"; };
 		03985A4627698531001A1155 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				03985A6E2769862E001A1155 /* BibleStruct.swift */,
 				03985A4627698531001A1155 /* Assets.xcassets */,
 				03985A7C276B093B001A1155 /* Navigation.swift */,
+				0369FC99276EC7E5002245D3 /* StartView.swift */,
 				03985A7A276AF96B001A1155 /* TestamentView.swift */,
 				03985A7E276B223F001A1155 /* ChapterListView.swift */,
 				03985A782769D701001A1155 /* ChapterView.swift */,
@@ -279,6 +282,7 @@
 				03985A7B276AF96B001A1155 /* TestamentView.swift in Sources */,
 				03985A6F2769862E001A1155 /* BibleStruct.swift in Sources */,
 				03985A7D276B093B001A1155 /* Navigation.swift in Sources */,
+				0369FC9A276EC7E5002245D3 /* StartView.swift in Sources */,
 				03985A752769957C001A1155 /* CardView.swift in Sources */,
 				03985A432769852D001A1155 /* iOSBibleApp.swift in Sources */,
 				03985A7F276B223F001A1155 /* ChapterListView.swift in Sources */,

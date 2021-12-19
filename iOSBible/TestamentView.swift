@@ -33,6 +33,10 @@ struct TestamentView: View {
                             .frame(maxWidth: .infinity, alignment: .center)
                     }
                 }
+                Text("Contact Developer")
+                    .padding()
+                    .foregroundColor(.blue)
+                    .frame(maxWidth: .infinity, alignment: .center)
             }
     //        .navigationBarTitle("")
     //        .navigationBarHidden(true)

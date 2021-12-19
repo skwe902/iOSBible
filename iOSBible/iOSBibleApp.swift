@@ -12,6 +12,7 @@ struct iOSBibleApp: App {
         WindowGroup {
             NavigationView{
                 TestamentView()
+                StartView()
             }
         }
     }
