@@ -33,13 +33,13 @@ struct TestamentView: View {
                             .frame(maxWidth: .infinity, alignment: .center)
                     }
                 }
-                Text("Contact Developer")
-                    .padding()
-                    .foregroundColor(.blue)
-                    .frame(maxWidth: .infinity, alignment: .center)
+                NavigationLink(destination: ContactDevView()){
+                    Text("Contact Developer")
+                        .padding()
+                        .foregroundColor(.blue)
+                        .frame(maxWidth: .infinity, alignment: .center)
+                }
             }
-    //        .navigationBarTitle("")
-    //        .navigationBarHidden(true)
             .navigationBarTitle("개역개정", displayMode: .inline)
         }
     }
