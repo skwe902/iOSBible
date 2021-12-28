@@ -11,7 +11,7 @@ struct TestamentView: View {
         let (oldList, newList) = navigation.getBookList()
         VStack{
             List{
-                Text("구약 성서")
+                Text("구약 (Old Testament)")
                     .padding()
                     .font(.title)
                     .frame(maxWidth: .infinity, alignment: .center)
@@ -22,7 +22,7 @@ struct TestamentView: View {
                             .frame(maxWidth: .infinity, alignment: .center)
                     }
                 }
-                Text("신약 성서")
+                Text("신약 (New Testament)")
                     .padding()
                     .font(.title)
                     .frame(maxWidth: .infinity, alignment: .center)
