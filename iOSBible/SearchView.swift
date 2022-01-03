@@ -8,7 +8,6 @@ import SwiftUI
 struct SearchView: View {
     @State var textInput: String = ""
     @State var result: String = ""
-    @State var enterPressed: Bool = false
     var body: some View {
         VStack{
             TextField(
