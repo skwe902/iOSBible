@@ -23,7 +23,7 @@ struct ContactDevView: View {
                     .bold()
                     .multilineTextAlignment(.center)
                     .padding()
-                Text("Hi! My name is Andy, a Computer Systems engineering student from University of Auckland, New Zealand. \n\nI love making apps and I also enjoy doing a bit of Machine Learning as well. \n\nIf you encounter any bugs, errors or would like to see any features added onto this app, visit my Github page and open a new issue. \n\nGod Bless!")
+                Text("Hi! My name is Andy, a Computer Systems engineering student from University of Auckland, New Zealand. \n\nI enjoy making apps and I always wanted to make an ad-free bible app for myself. \n\nIf you encounter any bugs, errors or would like to see any features added onto this app, visit my Github page and open a new issue. \n\nGod Bless!")
                     .font(.headline)
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .multilineTextAlignment(.leading)

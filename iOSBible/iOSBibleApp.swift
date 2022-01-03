@@ -11,8 +11,7 @@ struct iOSBibleApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationView{
-                TestamentView()
-                //StartView()
+                StartView()
             }
             .navigationViewStyle(StackNavigationViewStyle())
         }
