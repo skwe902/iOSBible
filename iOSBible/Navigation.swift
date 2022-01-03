@@ -46,5 +46,9 @@ class Navigation: ObservableObject{
         return (verseNum, verseList)
     }
     
+    func returnIfValid(){
+        //TODO
+    }
+    
     
 }
