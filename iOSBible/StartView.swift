@@ -13,14 +13,20 @@ struct StartView: View {
                 .edgesIgnoringSafeArea(.all)
             VStack{
                 Spacer()
-                Text("Bible App")
+                Text("개역개정 Bible App")
                     .font(.largeTitle)
                 Spacer()
                 Text("무슨 일을 하든지 \n 마음을 다하여 주께 하듯 하고 \n 사람에게 하듯 하지 말라 \n \n 골로새서 3:23")
                     .multilineTextAlignment(.center)
                 Spacer()
-                NavigationLink(destination: TestamentView()){
-                    Text("Read 개역개정")
+                NavigationLink(destination: TestamentView(testament: "Old")){
+                    Text("구약 / Old Testament")
+                        .foregroundColor(Color.blue)
+                        .padding()
+                        .frame(maxWidth: .infinity, alignment: .center)
+                }
+                NavigationLink(destination: TestamentView(testament: "New")){
+                    Text("신약 / New Testament")
                         .foregroundColor(Color.blue)
                         .padding()
                         .frame(maxWidth: .infinity, alignment: .center)
