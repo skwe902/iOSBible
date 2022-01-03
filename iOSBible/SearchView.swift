@@ -8,7 +8,7 @@ import SwiftUI
 struct SearchView: View {
     @State var textInput: String = ""
     @State var result: String = ""
-    @State var enter: Bool = false
+    @ObservedObject var navigation = Navigation()
     var body: some View {
         ZStack{
             Color.yellow
@@ -23,8 +23,12 @@ struct SearchView: View {
                             text: $textInput
                         )
                         .onSubmit {
-                            result = textInput
-                            enter = true
+                            if navigation.checkValid(input: textInput) {
+                                result = textInput
+                            }
+                            else {
+                                return
+                            }
                         }
                         .textInputAutocapitalization(.never)
                         .disableAutocorrection(true)
@@ -35,7 +39,7 @@ struct SearchView: View {
                     Spacer()
                 }
                 Spacer()
-                if result != "" && enter == true{
+                if result != "" && navigation.checkValid(input: textInput){
                     NavigationLink(destination: ChapterView(bookName: String(result.split(separator: Character(" "))[0]), chapterNo: String(result.split(separator: Character(" "))[1]))){
                         HStack{
                             Spacer()
@@ -44,9 +48,6 @@ struct SearchView: View {
                             Spacer()
                         }
                     }
-                }
-                else{
-                    //if not valid (Navigation > returnValid func) ToDo
                 }
                 Spacer()
             }

@@ -27,9 +27,27 @@ class Navigation: ObservableObject{
         return (oldList, newList)
     }
     
+    func getOldList()-> [String]{
+        for bible in Bible.verses{
+            if bible.testament == "구" && !oldList.contains(bible.long_label){
+                oldList.append(bible.long_label)
+            }
+        }
+        return oldList
+    }
+    
+    func getNewList()-> [String]{
+        for bible in Bible.verses{
+            if bible.testament == "신" && !newList.contains(bible.long_label){
+                newList.append(bible.long_label)
+            }
+        }
+        return newList
+    }
+    
     func getNumChapter(book: String) -> [String]{
         for bible in Bible.verses{
-            if !numChapter.contains(bible.chapter) && bible.long_label == book{
+            if bible.long_label == book && !numChapter.contains(bible.chapter){
                 numChapter.append(bible.chapter)
             }
         }
@@ -46,8 +64,13 @@ class Navigation: ObservableObject{
         return (verseNum, verseList)
     }
     
-    func returnIfValid(){
-        //TODO
+    func checkValid(input: String) -> Bool{
+        if input.count > 2 && input.contains(" "){
+            return true
+        }
+        else{
+            return false
+        }
     }
     
     

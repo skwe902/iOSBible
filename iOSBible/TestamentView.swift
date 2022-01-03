@@ -9,10 +9,10 @@ struct TestamentView: View {
     @ObservedObject var navigation = Navigation()
     let testament: String
     var body: some View {
-        let (oldList, newList) = navigation.getBookList()
         VStack{
             List{
                 if testament == "Old"{
+                    let oldList = navigation.getOldList()
                     Text("구약 (Old Testament)")
                         .padding()
                         .font(.title)
@@ -26,6 +26,7 @@ struct TestamentView: View {
                     }
                 }
                 else{
+                    let newList = navigation.getNewList()
                     Text("신약 (New Testament)")
                         .padding()
                         .font(.title)
